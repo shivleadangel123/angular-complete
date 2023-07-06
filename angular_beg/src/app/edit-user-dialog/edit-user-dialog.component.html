@@ -1,0 +1,21 @@
+<h3 class="text text-secondary" mat-dialog-title>Edit</h3>
+<div mat-dialog-content>
+    <form action="" class="form" [formGroup]="editForm">
+        <div class="form-group mb-3">
+        <label for="name" class="form-label">New Name:</label>
+        <input type="text" formControlName="name" id="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+        <label for="email" class="form-label">New Email:</label>
+        <input type="email" formControlName="email" id="email" class="form-control" required>
+        </div>
+        <div class="form-group">
+        <label for="password" class="form-label">New Password:</label>
+        <input type="password" formControlName="password" id="password" class="form-control" required>
+        </div>
+    </form>
+</div>
+<div mat-dialog-action>
+    <button (click)="cancel()" class="btn btn-light">Cancle</button>
+    <button (click)="saveChanges()" class="btn btn-success">Save Changes</button>
+</div>
